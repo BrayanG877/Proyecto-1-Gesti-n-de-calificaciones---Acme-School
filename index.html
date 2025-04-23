@@ -34,10 +34,11 @@
         <button onclick="volverMenu()">Volver</button>
     </div>
 
-    <!-- Asignación de Estudiantes -->
+    <!-- Asignación de Estudiantes (Administrativo) -->
     <div id="asignarEstudiantes" style="display: none;">
         <h2>Asignar Estudiantes a Curso</h2>
-        <div id="listaEstudiantes"></div>
+        <!-- Lista de estudiantes para asignar -->
+        <div id="listaEstudiantesAsignacion"></div>
         <h3>Selecciona un curso:</h3>
         <div id="listaCursosAdmin"></div>
         <button onclick="volverAdminPanel()">Volver</button>
@@ -50,18 +51,19 @@
         <button onclick="volverMenu()">Volver</button>
     </div>
 
-    <!-- Gestión de Cursos -->
+    <!-- Gestión de Cursos (Vista Profesor) -->
     <div id="gestionCursos" style="display: none;">
         <h2>Mis Cursos</h2>
-        <div id="listaCursos"></div> <!-- Aquí se mostrarán los cursos -->
+        <div id="listaCursos"></div>
         <button onclick="volverProfesorPanel()">Volver</button>
     </div>
 
-    <!-- Gestión de Estudiantes en el Curso -->
+    <!-- Gestión de Estudiantes en el Curso (Calificaciones) -->
     <div id="gestionEstudiantes" style="display: none;">
         <h2>Estudiantes del Curso: <span id="cursoActual"></span></h2>
-        <div id="listaEstudiantes"></div> <!-- Aquí se mostrarán los estudiantes con inputs para calificar -->
-        <button onclick="guardarNotas()">Guardar-Notas</button>
+        <!-- Tabla de calificaciones -->
+        <div id="listaEstudiantesCalificaciones"></div>
+        <button onclick="guardarCalificaciones()">Guardar Calificaciones</button>
         <button onclick="volverGestionCursos()">Volver</button>
     </div>
 
